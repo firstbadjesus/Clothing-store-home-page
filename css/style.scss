@@ -1,0 +1,255 @@
+$accent: #d7b399;
+$dark: #212121;
+$light: #f9f6f1;
+$gray: #cbcfd4;
+$light-gray: #f4f4f4;
+$dark-gray: #8d8d8d;
+$important: #d84033;
+
+// * {
+//    outline: 1px solid red;
+// }
+
+body {
+   font-family: "Montserrat", sans-serif;
+}
+
+.page-light {
+   background-color: $light;
+}
+.page-dark {
+   background-color: $dark;
+}
+
+.wrapper {
+   max-width: 1110px;
+   margin: 0 auto;
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 172px;
+}
+
+.nav {
+   display: flex;
+   list-style-type: none;
+   padding-left: 0;
+   &-item {
+      margin-right: 52px;
+   }
+   &-link {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      color: $dark;
+   }
+}
+.cart {
+   color: white;
+   font-size: 12px;
+   font-weight: 700;
+   display: block;
+   padding-right: 8px;
+
+   &-img {
+      padding-right: 16px;
+   }
+   &-img2 {
+      align-items: center;
+      padding-bottom: 7px;
+   }
+}
+.title-h2 {
+   text-align: center;
+   font-size: 36px;
+   text-transform: uppercase;
+}
+.btn {
+   padding: 17px 30px;
+   background-color: $accent;
+   text-decoration: none;
+   font-size: 16px;
+   letter-spacing: 0.03em;
+   color: #ffffff;
+   &-xs {
+      padding: 8px 28px;
+   }
+   &-center {
+      display: block;
+      text-align: center;
+      max-width: 220px;
+      margin: 0 auto;
+   }
+   span {
+      margin: 10px;
+   }
+}
+.main {
+   display: flex;
+   justify-content: space-between;
+   &-item {
+      flex: 0 0 50%;
+   }
+   .sale {
+      &-description {
+         font-size: 30px;
+         letter-spacing: 0.02em;
+         color: #000000;
+      }
+      &-title {
+         font-weight: bold;
+         font-size: 55px;
+         letter-spacing: 0.04em;
+         color: #000000;
+      }
+   }
+}
+
+.box {
+   position: relative;
+   &-price {
+      position: absolute;
+      right: 0;
+      text-align: right;
+      &-new {
+         font-weight: bold;
+         font-size: 42px;
+         text-align: right;
+         letter-spacing: 0.02em;
+         text-transform: uppercase;
+         color: #d84033;
+      }
+      &-old {
+         font-weight: bold;
+         font-size: 24px;
+         text-align: right;
+         letter-spacing: 0.05em;
+         text-decoration-line: line-through;
+         text-transform: uppercase;
+         color: #000000;
+      }
+   }
+}
+
+.notice {
+   color: white;
+   text-align: center;
+   background-color: $dark;
+
+   &-title {
+      font-size: 30px;
+      text-transform: uppercase;
+   }
+   h1 {
+      font-weight: 400;
+      padding-top: 80px;
+   }
+   span {
+      font-weight: 700;
+   }
+   &-description {
+      padding-bottom: 70px;
+   }
+}
+
+.collection {
+   display: flex;
+   justify-content: space-between;
+   padding: 50px 0;
+   &-item {
+      flex: 0 0 50%;
+      background-size: 191px 171px;
+      background-size: cover;
+   }
+   &-man {
+      background: url(../img/Rectangle3.jpg) no-repeat right bottom;
+   }
+   &-woman {
+      background: url(../img/Rectangle3.1.jpg) no-repeat right bottom;
+   }
+   &-title {
+      font-size: 24px;
+      letter-spacing: 0.03em;
+      color: #000000;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+   }
+   &-description {
+      font-size: 16px;
+      color: #000000;
+      margin-bottom: 40px;
+   }
+}
+
+.product {
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   &-item {
+      flex: 0 0 24%;
+      position: relative;
+      &:before,
+      &:after {
+         content: " ";
+         display: block;
+         width: 100%;
+         height: 25px;
+         background-size: cover;
+         background-repeat: no-repeat;
+      }
+      &:before {
+         background-image: url(../img/svg/Group7.svg);
+      }
+      &:after {
+         background-image: url(../img/svg/item-bottom.png);
+      }
+   }
+   &-title {
+      font-size: 14px;
+   }
+   &-price {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      color: #d7b399;
+   }
+}
+.footer {
+   background-color: $dark;
+   display: flex;
+   justify-content: space-between;
+   padding: 30px 0;
+   &-logo {
+      flex: 0 0 40%;
+   }
+
+   &-nav {
+      flex: 0 0 60%;
+      display: flex;
+      justify-content: space-between;
+   }
+   &-list {
+      list-style-type: none;
+      padding-left: 10px;
+      &-title {
+         color: white;
+         font-weight: 700;
+         font-size: 10px;
+      }
+      &-item {
+         margin-bottom: 10px;
+      }
+      &-link {
+         font-size: 14px;
+         color: #cbcfd4;
+         text-decoration: none;
+      }
+   }
+}
